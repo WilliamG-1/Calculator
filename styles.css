@@ -13,20 +13,32 @@ body {
     height: 750px;
     border-radius: 10px;
 }
-
-.screen {
+.output {
     display: flex;
     align-items: stretch;
     padding: 10px;
     flex: 3;
     background-color: rebeccapurple;
-    color: white;
 }
-.output{
+.screen {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
     flex: 1;
     background-color: aliceblue;
     border-radius: 5px;
+    padding: 25px;
+    gap: 5px;
 }
+.previous_result{
+    font-size: 22px;
+    align-self: flex-end;
+}
+.text_display{
+    font-size: 54px;
+    align-self: flex-end;
+}
+
 .input {
     display: flex;
     flex-direction: row;
@@ -34,11 +46,14 @@ body {
     padding: 10px;
     gap: 10px;
 }
+
+/* Influence all buttons */
 .input button {
     border-radius: 5px;
     font-weight: 800px;
-    font-size: 32px;
+    font-size: 40px;
 }
+
 .left_buttons{
     flex: 3;
     display: flex;
