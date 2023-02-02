@@ -18,7 +18,7 @@ body {
     display: flex;
     align-items: stretch;
     padding: 10px;
-    flex: 4;
+    flex: 3;
     background-color: rebeccapurple;
     color: white;
 }
@@ -28,5 +28,41 @@ body {
     border-radius: 5px;
 }
 .input {
-    flex: 10;
+    display: flex;
+    flex-direction: row;
+    flex: 7;
+    padding: 10px;
+    gap: 10px;
 }
+.input button {
+    border-radius: 5px;
+}
+.left_buttons{
+    flex: 3;
+    display: flex;
+    gap: 10px;
+}
+.left_buttons div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+}
+.left_buttons button {
+    flex: 1;
+    background-color: white;
+}
+
+.right_buttons{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.right_buttons * {
+    flex: 1;
+    background-color: white;
+
+}
+
+
