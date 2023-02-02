@@ -36,6 +36,8 @@ body {
 }
 .input button {
     border-radius: 5px;
+    font-weight: 800px;
+    font-size: 32px;
 }
 .left_buttons{
     flex: 3;
@@ -64,5 +66,3 @@ body {
     background-color: white;
 
 }
-
-
