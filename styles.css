@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    width: 500px;
+    height: 650px;
+}
+
+.screen {
+    flex: 3;
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.input {
+    flex: 10;
+}
