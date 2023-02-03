@@ -1,4 +1,5 @@
 body {
+    
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -11,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #003566;
-    width: 500px;
+    width: 32em;
     height: 750px;
     border-radius: 10px;
 }
