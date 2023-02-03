@@ -31,8 +31,9 @@ body {
     gap: 5px;
 }
 .previous_result{
-    font-size: 22px;
-    align-self: flex-end;
+    font-size: 28px;
+    align-self: flex-start;
+    font-weight: 400;
 }
 .text_display{
     font-size: 54px;
