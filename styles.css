@@ -1,5 +1,5 @@
 body {
-    
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -16,6 +16,7 @@ body {
     max-width: 100%;
     max-height: 60vh;
     border-radius: 10px;
+    box-shadow: 3px 3px 6px rgb(3, 3, 39);
 }
 .output {
     display: flex;
@@ -89,6 +90,7 @@ body {
 }
 
 button:hover{
-    transform: scale(1.1);
-    border: 1px #ffd60a outset;
+    /* transform: scale(1.1); */
+    /*border: 1px #ffd60a outset;*/
+    box-shadow: 0 0 10px #ffd60a;
 }
