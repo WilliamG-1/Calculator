@@ -8,6 +8,7 @@ var numbers = document.querySelectorAll(".int_btn");
 var operationSelected = false;
 
 var result = 0; // Result
+var answer = 0;
 var calculated = true;
 var canOperate = true;
 function clear() {
@@ -30,8 +31,11 @@ numbers.forEach((number) => {
 // Oper button press
 operations.forEach(function(operation) {
     operation.addEventListener('click', () => {
-        if (!operationSelected)
-        {
+        if (!operationSelected){
+            if (calculated){
+                operationDisplay.textContent = String(answer);
+                calculated = false;
+            }
             operationDisplay.textContent += operation.textContent;
         }
         operationSelected = true;
@@ -44,7 +48,8 @@ clearButton.addEventListener('click', clear);
 calculateButton.addEventListener('click', ()=>{
     if (!calculated)
     {
-        textDisplay.textContent = compute(operationDisplay.textContent);
+        answer = compute(operationDisplay.textContent, answer);
+        textDisplay.textContent = answer;
         operationDisplay.textContent = updateString(operationDisplay.textContent);
         calculated = true;
     }
@@ -136,7 +141,6 @@ function compute(string)
     }
     return arr[0];
 }
-
 function updateString(string)
 {
     const end = string.length - 1;
