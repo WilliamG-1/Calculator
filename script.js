@@ -13,6 +13,7 @@ var calculated = true;
 var canOperate = true;
 function clear() {
     result = 0;
+    answer = 0;
     textDisplay.textContent = 0;
     operationDisplay.textContent = "";
     calculated = true;
